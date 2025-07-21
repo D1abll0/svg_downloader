@@ -6,7 +6,7 @@ def getFileName(url):
 	filename = os.path.basename(url)
 	filename_with_underscores = filename.replace('-', '_')
 	path_parts = url.split('/')
-	category = path_parts[-2]  # 'solid'
+	category = path_parts[-2]
 	return f"{category}__{filename_with_underscores}"
 
 def getUrlsFromFile(urls, file):
